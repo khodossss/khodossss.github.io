@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+
+  section { padding: 60px 5vw; }
+
+  #whoami {
+    padding-top: 80px;
+    min-height: auto;
+  }
+
+  .whoami-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-terminal { max-width: 280px; }
+
+  .exp-card { padding: 20px; }
+
+  .edu-card { flex-direction: column; }
+  .edu-meta { text-align: left; }
+}

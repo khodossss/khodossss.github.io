@@ -1,0 +1,61 @@
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+  transition: border-color 0.2s;
+}
+
+.edu-card:hover { border-color: var(--green-border); }
+
+.edu-degree {
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 4px;
+}
+
+.edu-inst {
+  font-size: 12px;
+  color: var(--cyan);
+  margin-bottom: 6px;
+}
+
+.edu-spec {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.edu-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.edu-period {
+  font-size: 11px;
+  color: var(--green);
+  background: var(--green-muted);
+  border: 1px solid var(--green-border);
+  padding: 3px 10px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.edu-gpa {
+  font-size: 12px;
+  color: var(--amber);
+  display: block;
+}

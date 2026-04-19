@@ -1,0 +1,57 @@
+.pub-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 28px 32px;
+  transition: border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.pub-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--green), var(--cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.pub-card:hover::before { transform: scaleX(1); }
+.pub-card:hover { border-color: var(--green-border); }
+
+.pub-journal {
+  font-size: 10px;
+  color: var(--green);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pub-q1 {
+  background: rgba(0,212,255,0.12);
+  border: 1px solid rgba(0,212,255,0.3);
+  color: var(--cyan);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.pub-title {
+  font-family: var(--display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.pub-meta {
+  font-size: 11px;
+  color: var(--text-dim);
+}

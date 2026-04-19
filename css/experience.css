@@ -1,0 +1,86 @@
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.exp-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 28px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 2px;
+  background: var(--green);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s;
+}
+
+.exp-card:hover::before { transform: scaleY(1); }
+.exp-card:hover { border-color: var(--green-border); transform: translateX(2px); }
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.exp-role {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+
+.exp-period {
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  background: var(--green-muted);
+  border: 1px solid var(--green-border);
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.exp-company {
+  font-size: 13px;
+  color: var(--cyan);
+  margin-bottom: 18px;
+}
+
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-bullets li {
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.exp-bullets li::before {
+  content: '▸';
+  color: var(--green);
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}

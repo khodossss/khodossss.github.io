@@ -1,0 +1,77 @@
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 12px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.2s;
+  width: 300px;
+  position: relative;
+}
+
+.contact-card:hover {
+  border-color: var(--green-border);
+  color: var(--green);
+  background: var(--green-muted);
+  transform: translateY(-1px);
+}
+
+.contact-card-inner {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-icon {
+  color: var(--green);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.copy-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text-dim);
+  border-radius: 3px;
+  padding: 5px 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-btn:hover {
+  border-color: var(--green-border);
+  color: var(--green);
+  background: var(--green-muted);
+}
+
+.copy-btn.copied {
+  border-color: var(--green);
+  color: var(--green);
+}

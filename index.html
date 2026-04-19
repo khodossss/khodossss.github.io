@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Khodos — AI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/whoami.css">
+<link rel="stylesheet" href="css/contacts.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/experience.css">
+<link rel="stylesheet" href="css/education.css">
+<link rel="stylesheet" href="css/publications.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<nav>
+  <div class="nav-logo">~/alexander.khodos</div>
+  <ul class="nav-links">
+    <li><a href="#whoami">whoami</a></li>
+    <li><a href="#contacts">contacts</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#education">education</a></li>
+    <li><a href="#publications">publications</a></li>
+    <li><a href="#projects">projects</a></li>
+  </ul>
+</nav>
+
+<!-- ============ WHOAMI ============ -->
+<section id="whoami">
+  <div class="whoami-inner">
+
+    <!-- Left: Identity -->
+    <div class="hero-right">
+      <div class="prompt-line">$ whoami</div>
+      <h1 class="hero-name">Alexander<br><span>Khodos</span></h1>
+      <p class="hero-title"><span id="typed-title"></span><span class="typed-cursor">_</span></p>
+    </div>
+
+    <!-- Right: Photo terminal -->
+    <div class="photo-terminal">
+      <div class="photo-terminal-header">
+        <div class="term-dots">
+          <div class="term-dot r"></div>
+          <div class="term-dot y"></div>
+          <div class="term-dot g"></div>
+        </div>
+        <div class="photo-term-title">identity — -zsh</div>
+      </div>
+      <div class="photo-terminal-body">
+        <div class="photo-cmd"><span>$</span> cat ./<span id="photo-cmd-name">prod_ok.jpg</span> | display</div>
+        <div class="photo-wrapper">
+          <img class="photo-slide active" src="docs/prod_ok.jpg" alt="Alexander Khodos" data-name="prod_ok.jpg" />
+          <img class="photo-slide" src="docs/prod_on_fire.png" alt="Alexander Khodos" data-name="prod_on_fire.png" />
+          <div class="photo-overlay"></div>
+          <div class="photo-scan-line"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ CONTACTS ============ -->
+<section id="contacts">
+  <div class="section-label">// get in touch</div>
+  <h2 class="section-title">Contacts</h2>
+
+  <div class="contacts-grid">
+    <a href="tel:+972502023187" class="contact-card">
+      <span class="contact-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </span>
+      <div class="contact-card-inner">
+        <span class="contact-label">phone</span>
+        +972 50 202 3187
+      </div>
+      <button class="copy-btn" onclick="copyContact(event, '+972502023187')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button>
+    </a>
+    <a href="mailto:khodos.a@proton.me" class="contact-card">
+      <span class="contact-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </span>
+      <div class="contact-card-inner">
+        <span class="contact-label">email</span>
+        khodos.a@proton.me
+      </div>
+      <button class="copy-btn" onclick="copyContact(event, 'khodos.a@proton.me')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button>
+    </a>
+    <a href="https://linkedin.com/in/khodosss" target="_blank" class="contact-card">
+      <span class="contact-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </span>
+      <div class="contact-card-inner">
+        <span class="contact-label">linkedin</span>
+        linkedin.com/in/khodosss
+      </div>
+      <button class="copy-btn" onclick="copyContact(event, 'linkedin.com/in/khodosss')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button>
+    </a>
+    <a href="https://t.me/khodossss" target="_blank" class="contact-card">
+      <span class="contact-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      </span>
+      <div class="contact-card-inner">
+        <span class="contact-label">telegram</span>
+        @khodossss
+      </div>
+      <button class="copy-btn" onclick="copyContact(event, '@khodossss')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button>
+    </a>
+    <a href="https://github.com/khodossss" target="_blank" class="contact-card">
+      <span class="contact-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </span>
+      <div class="contact-card-inner">
+        <span class="contact-label">github</span>
+        github.com/khodossss
+      </div>
+      <button class="copy-btn" onclick="copyContact(event, 'github.com/khodossss')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button>
+    </a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="section-label">// technical stack</div>
+  <h2 class="section-title">Core Skills <span style="font-size:14px;font-family:var(--mono);color:var(--text-dim);font-weight:400;letter-spacing:0.05em;">— click to expand</span></h2>
+
+  <div class="skills-grid">
+    <div class="skill-group" data-skill="languages-infra">
+      <div class="skill-group-name">Languages & Infrastructure</div>
+      <div class="skill-item">Python (Advanced)</div>
+      <div class="skill-item">SQL & NoSQL</div>
+      <div class="skill-item">REST API — FastAPI</div>
+      <div class="skill-item">Docker & Docker Compose</div>
+      <div class="skill-item">Linux · macOS</div>
+      <div class="skill-item">Git</div>
+    </div>
+    <div class="skill-group" data-skill="llm-agents">
+      <div class="skill-group-name">LLM & Agents</div>
+      <div class="skill-item">LangChain & LangGraph</div>
+      <div class="skill-item">AI LLM Agent Development</div>
+      <div class="skill-item">Open-Source LLMs (Llama, Qwen, Mistral)</div>
+      <div class="skill-item">Proprietary LLM APIs</div>
+      <div class="skill-item">LangSmith</div>
+    </div>
+    <div class="skill-group" data-skill="ml-dl">
+      <div class="skill-group-name">ML & DL</div>
+      <div class="skill-item">PyTorch</div>
+      <div class="skill-item">Keras</div>
+      <div class="skill-item">Scikit-learn</div>
+      <div class="skill-item">Pandas</div>
+      <div class="skill-item">NumPy</div>
+    </div>
+    <div class="skill-group" data-skill="data-retrieval">
+      <div class="skill-group-name">Data & Retrieval</div>
+      <div class="skill-item">Retrieval-Augmented Generation (RAG)</div>
+      <div class="skill-item">Vector Search</div>
+      <div class="skill-item">Optical Character Recognition (OCR)</div>
+    </div>
+    <div class="skill-group" data-skill="engineering">
+      <div class="skill-group-name">Engineering</div>
+      <div class="skill-item">OOP</div>
+      <div class="skill-item">Clean Code</div>
+      <div class="skill-item">Unit Testing</div>
+      <div class="skill-item">Agile</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="section-label">// work history</div>
+  <h2 class="section-title">Experience</h2>
+
+  <div class="experience-list">
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-role">AI Engineer</div>
+        <div class="exp-period">05/2025 – Present</div>
+      </div>
+      <div class="exp-company">OSINT Losena L.T.D — Israel</div>
+      <ul class="exp-bullets">
+        <li>Built LLM-based entity extraction pipelines processing millions of heterogeneous documents using Llama/Qwen 3B–7B, LangChain/LangGraph orchestration, per-format parsers, and OCR.</li>
+        <li>Designed an investigation decision-making system using Mistral 7B for relationship analysis and heuristic scoring, iteratively expanding a graph. Evaluated via analyst human feedback.</li>
+        <li>Developed document intelligence workflows for identity documents combining own fine-tuned YOLO detection, PaddleOCR, custom MRZ parsing, and Llama 3B field extraction. Developed evaluation pipeline on labeled documents and cross-validation.</li>
+        <li>Implemented face search pipelines using fine-tuned YOLO, InsightFace embeddings, and FAISS across big amount of faces.</li>
+        <li>Built a login/password CNN + self-attention classifier in PyTorch. Developed labeling heuristic pipeline and trained on labeled credentials.</li>
+        <li>Designed and optimized data retrieval workflows in MongoDB (indexing strategy, shard/partition logic) and exposed functionality through FastAPI REST APIs using Docker Compose and microservice architecture for integration with downstream services.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-role">AI Engineer / Data Scientist</div>
+        <div class="exp-period">03/2023 – 04/2025</div>
+      </div>
+      <div class="exp-company">Independent (Freelance) — Germany / Israel</div>
+      <ul class="exp-bullets">
+        <li>Designed and implemented a data-driven chatbot using LLMs and RAG with a focus on accurate retrieval and transformation of domain-specific knowledge.</li>
+        <li>Analyzed agent-customer call scripts at scale using NLP, sentiment analysis, LLMs, and RAG to quantify interaction quality and generate actionable service insights.</li>
+        <li>Processed raw multimedia data from Instagram profiles using image and video analysis tools to extract engagement KPIs and audience metrics.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-role">AI/ML Researcher</div>
+        <div class="exp-period">06/2020 – 02/2023</div>
+      </div>
+      <div class="exp-company">ETU 'LETI', Intelligent Technologies Lab — Saint-Petersburg, Russia</div>
+      <ul class="exp-bullets">
+        <li>Collected, cleaned, and analyzed large datasets from robotic football matches to extract performance insights and support strategic decision-making.</li>
+        <li>Applied supervised and reinforcement learning techniques to improve multi-agent coordination strategies and refine predictive models from raw match data.</li>
+        <li>Published peer-reviewed research on deep learning segmentation for SAR imagery (Remote Sensing, Q1 journal, 2023).</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-role">Teaching Assistant</div>
+        <div class="exp-period">09/2022 – 02/2023</div>
+      </div>
+      <div class="exp-company">Saint-Petersburg Electrotechnical University — Russia · Part-time</div>
+      <ul class="exp-bullets">
+        <li>Led seminars, practical sessions, and laboratory work in AI-related disciplines.</li>
+        <li>Participated in scientific conferences and contributed to journal publications in AI.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ EDUCATION ============ -->
+<section id="education">
+  <div class="section-label">// academic background</div>
+  <h2 class="section-title">Education</h2>
+
+  <div class="edu-list">
+    <div class="edu-card">
+      <div>
+        <div class="edu-degree">Master of Computer Science</div>
+        <div class="edu-inst">Saint-Petersburg Electrotechnical University (ETU 'LETI')</div>
+        <div class="edu-spec">Specialization: Artificial Intelligence</div>
+      </div>
+      <div class="edu-meta">
+        <div class="edu-period">09/2020 – 09/2022</div>
+        <span class="edu-gpa">GPA 4.0 / 4.0</span>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div>
+        <div class="edu-degree">Bachelor of Computer Science</div>
+        <div class="edu-inst">Saint-Petersburg Electrotechnical University (ETU 'LETI')</div>
+      </div>
+      <div class="edu-meta">
+        <div class="edu-period">09/2015 – 09/2020</div>
+        <span class="edu-gpa">GPA 3.2 / 4.0</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications">
+  <div class="section-label">// research output</div>
+  <h2 class="section-title">Publications</h2>
+
+  <a class="pub-card" href="https://www.mdpi.com/2072-4292/15/5/1298" target="_blank" style="display:block;text-decoration:none;color:inherit;">
+    <div class="pub-journal">
+      Remote Sensing
+      <span class="pub-q1">Q1</span>
+    </div>
+    <div class="pub-title">
+      Recognizing the Shape and Size of Tundra Lakes in Synthetic Aperture Radar (SAR) Images Using Deep Learning Segmentation
+    </div>
+    <div class="pub-meta">February 2023 · Peer-reviewed · Remote Sensing Journal (Q1)</div>
+  </a>
+</section>
+
+<hr class="divider">
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="section-label">// side quests</div>
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="projects-grid">
+
+    <a class="project-card" href="https://github.com/khodossss/verifyn" target="_blank" rel="noopener noreferrer">
+      <div class="project-head">
+        <span class="project-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </span>
+        <span class="project-lang">Python</span>
+      </div>
+      <div class="project-name">verifyn</div>
+      <div class="project-desc">Autonomous ReAct agent that fact-checks news with evidence, live web search, a fine-tuned DeBERTa claim pre-filter, and a self-learning source reputation DB.</div>
+      <div class="project-link">
+        <span>github.com/khodossss/verifyn</span>
+        <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://github.com/khodossss/evoprompts" target="_blank" rel="noopener noreferrer">
+      <div class="project-head">
+        <span class="project-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </span>
+        <span class="project-lang">Python</span>
+      </div>
+      <div class="project-name">evoprompts</div>
+      <div class="project-desc">Evolutionary prompt optimization via a genetic algorithm where one LLM seeds, crosses over, and mutates system prompts while a cheaper LLM evaluates fitness on a dataset.</div>
+      <div class="project-link">
+        <span>github.com/khodossss/evoprompts</span>
+        <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://github.com/khodossss/routent" target="_blank" rel="noopener noreferrer">
+      <div class="project-head">
+        <span class="project-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </span>
+        <span class="project-lang">Python</span>
+      </div>
+      <div class="project-name">routent</div>
+      <div class="project-desc">Adaptive router that learns per-query which model maximizes a user-defined reward over quality, latency, and cost — using LinUCB bandits over semantic embeddings.</div>
+      <div class="project-link">
+        <span>github.com/khodossss/routent</span>
+        <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ ADDITIONAL ============ -->
+<section style="padding-top: 48px; padding-bottom: 48px;">
+  <div class="section-label">// additional</div>
+  <div class="skills-grid" style="margin-top:8px;">
+    <div class="skill-group">
+      <div class="skill-group-name">Languages</div>
+      <div class="skill-item">English — Fluent</div>
+      <div class="skill-item">Russian — Native</div>
+      <div class="skill-item">Ukrainian — Native</div>
+      <div class="skill-item">Hebrew — Conversational</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Interests</div>
+      <div class="skill-item">AI Agents & Automation</div>
+      <div class="skill-item">LLM Systems</div>
+      <div class="skill-item">Scalable Pipelines</div>
+      <div class="skill-item">Document Intelligence</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Hobbies</div>
+      <div class="skill-item">Basketball</div>
+      <div class="skill-item">Music</div>
+      <div class="skill-item">Traveling</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Alexander Khodos</span> · <span>2026</span>
+</footer>
+
+<script src="js/contacts.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/photo-loop.js"></script>
+</body>
+</html>

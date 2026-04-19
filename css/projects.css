@@ -1,0 +1,97 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 12px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 22px 24px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--green), var(--cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.project-card:hover::before { transform: scaleX(1); }
+.project-card:hover { border-color: var(--green-border); transform: translateY(-2px); }
+.project-card:hover .project-arrow { transform: translate(2px, -2px); color: var(--green); }
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.project-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+}
+
+.project-lang {
+  font-size: 10px;
+  color: var(--green);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: var(--green-muted);
+  border: 1px solid var(--green-border);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.project-name {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.project-desc {
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-dim);
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.project-link span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.project-arrow {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  transition: transform 0.2s, color 0.2s;
+}
