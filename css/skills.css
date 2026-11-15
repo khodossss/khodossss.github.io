@@ -13,7 +13,6 @@
   position: relative;
 }
 
-.skill-group[data-skill] { cursor: pointer; }
 
 .skill-group:hover {
   border-color: var(--green-border);

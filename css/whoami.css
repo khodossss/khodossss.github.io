@@ -164,3 +164,26 @@
   90%  { top: 100%; opacity: 0.3; }
   100% { top: 100%; opacity: 0; }
 }
+
+.hero-summary {
+  max-width: 560px;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 28px;
+}
+
+.hero-cv {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--text-bright);
+  text-decoration: none;
+  border: 1px solid var(--green-border);
+  background: var(--green-muted);
+  padding: 10px 16px;
+  border-radius: 4px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.hero-cv span { color: var(--green); }
+.hero-cv:hover { border-color: var(--green); color: var(--green); }
