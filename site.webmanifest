@@ -1,0 +1,11 @@
+{
+  "name": "Alexander Khodos — AI Engineer",
+  "short_name": "Khodos",
+  "icons": [
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#080c10",
+  "background_color": "#080c10",
+  "display": "browser"
+}
